@@ -26,7 +26,7 @@
 using namespace std;
 using namespace boost;
 
-static const int MAX_OUTBOUND_CONNECTIONS = 8;
+static const int MAX_OUTBOUND_CONNECTIONS = 32;
 
 void ThreadMessageHandler2(void* parg);
 void ThreadSocketHandler2(void* parg);
@@ -1140,7 +1140,8 @@ void MapPort(bool /* unused fMapPort */)
 // testnet dns seed begins with 't', all else are 421 dns seeds.
 static const char *strDNSSeed[][2] = {
     
-    //{"seed", "seed.421.world"}
+    {"seed", "seed1.fourtwentyone.net"}
+        {"seed2", "seed2.fourtwentyone.net"}
 
    };
 
