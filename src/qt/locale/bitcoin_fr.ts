@@ -262,9 +262,9 @@ Ce produit inclut des logiciels développés par le projet OpenSSL pour utilisat
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="107"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!
+        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR 421&lt;/b&gt;!
 Are you sure you wish to encrypt your wallet?</source>
-        <translation>ATTENTION : si vous cryptez votre porte-monnaie et perdez votre mot de passe, vous &lt;b&gt;PERDREZ TOUS VOS PEERCOINS&lt;/b&gt; !
+        <translation>ATTENTION : si vous cryptez votre porte-monnaie et perdez votre mot de passe, vous &lt;b&gt;PERDREZ TOUS VOS 421&lt;/b&gt; !
 Etes-vous sûr de vouloir crypter votre porte-monnaie ?</translation>
     </message>
     <message>

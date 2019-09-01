@@ -262,7 +262,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="107"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!
+        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR 421&lt;/b&gt;!
 Are you sure you wish to encrypt your wallet?</source>
         <translation>警告：如果您加密了您的钱包之后忘记了口令，您将会&lt;b&gt;失去所有的421&lt;/b&gt;！
 确定要加密钱包吗？</translation>

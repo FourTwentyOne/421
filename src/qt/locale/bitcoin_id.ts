@@ -259,9 +259,9 @@ Produk ini berisi software yang dikembangkan oleh OpenSSL Project untuk digunaka
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="107"/>
-        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!
+        <source>WARNING: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR 421&lt;/b&gt;!
 Are you sure you wish to encrypt your wallet?</source>
-        <translation>PERINGATAN: Jika Anda mengenkripsi dompet Anda dan kehilangan passphrase, Anda akan &lt;b&gt;KEHILANGAN SEMUA PEERCOINS ANDA&lt;/b&gt;! 
+        <translation>PERINGATAN: Jika Anda mengenkripsi dompet Anda dan kehilangan passphrase, Anda akan &lt;b&gt;KEHILANGAN SEMUA 421 ANDA&lt;/b&gt;! 
 Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
     <message>
