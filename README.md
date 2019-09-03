@@ -10,3 +10,5 @@ pos eligible after 10 days
 
 port 8422
 rpcport 8421 
+
+Discord Room https://discord.gg/jhxSy9p
