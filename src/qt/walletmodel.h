@@ -10,7 +10,7 @@
 class OptionsModel;
 class AddressTableModel;
 class TransactionTableModel;
-class MintingTableModel;
+
 class CWallet;
 class CKeyID;
 class CPubKey;
@@ -56,7 +56,7 @@ public:
 
     OptionsModel *getOptionsModel();
     AddressTableModel *getAddressTableModel();
-    MintingTableModel *getMintingTableModel();
+
     TransactionTableModel *getTransactionTableModel();
 
     qint64 getBalance() const;
@@ -134,7 +134,7 @@ private:
     OptionsModel *optionsModel;
 
     AddressTableModel *addressTableModel;
-    MintingTableModel *mintingTableModel;
+
     TransactionTableModel *transactionTableModel;
 
     // Cache some values to be able to detect changes

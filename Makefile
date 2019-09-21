@@ -109,9 +109,6 @@ SOURCES       = src/qt/bitcoin.cpp \
 		src/qt/qtipcserver.cpp \
 		src/qt/rpcconsole.cpp \
 		src/kernel.cpp \
-		src/qt/mintingview.cpp \
-		src/qt/mintingtablemodel.cpp \
-		src/qt/mintingfilterproxy.cpp \
 		src/kernelrecord.cpp \
 		src/qt/virtualkeyboard.cpp \
 		src/qt/multisigaddressentry.cpp \
@@ -147,9 +144,6 @@ SOURCES       = src/qt/bitcoin.cpp \
 		build/moc_notificator.cpp \
 		build/moc_rpcconsole.cpp \
 		build/moc_blockbrowser.cpp \
-		build/moc_mintingview.cpp \
-		build/moc_mintingtablemodel.cpp \
-		build/moc_mintingfilterproxy.cpp \
 		build/moc_virtualkeyboard.cpp \
 		build/moc_multisigaddressentry.cpp \
 		build/moc_multisiginputentry.cpp \
@@ -213,9 +207,6 @@ OBJECTS       = build/bitcoin.o \
 		build/qtipcserver.o \
 		build/rpcconsole.o \
 		build/kernel.o \
-		build/mintingview.o \
-		build/mintingtablemodel.o \
-		build/mintingfilterproxy.o \
 		build/kernelrecord.o \
 		build/virtualkeyboard.o \
 		build/multisigaddressentry.o \
@@ -252,9 +243,6 @@ OBJECTS       = build/bitcoin.o \
 		build/moc_notificator.o \
 		build/moc_rpcconsole.o \
 		build/moc_blockbrowser.o \
-		build/moc_mintingview.o \
-		build/moc_mintingtablemodel.o \
-		build/moc_mintingfilterproxy.o \
 		build/moc_virtualkeyboard.o \
 		build/moc_multisigaddressentry.o \
 		build/moc_multisiginputentry.o \
@@ -408,9 +396,6 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		src/qt/rpcconsole.h \
 		src/kernel.h \
 		src/qt/blockbrowser.h \
-		src/qt/mintingview.h \
-		src/qt/mintingtablemodel.h \
-		src/qt/mintingfilterproxy.h \
 		src/kernelrecord.h \
 		src/qt/virtualkeyboard.h \
 		src/qt/multisigaddressentry.h \
@@ -474,9 +459,6 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		src/qt/qtipcserver.cpp \
 		src/qt/rpcconsole.cpp \
 		src/kernel.cpp \
-		src/qt/mintingview.cpp \
-		src/qt/mintingtablemodel.cpp \
-		src/qt/mintingfilterproxy.cpp \
 		src/kernelrecord.cpp \
 		src/qt/virtualkeyboard.cpp \
 		src/qt/multisigaddressentry.cpp \
@@ -679,8 +661,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents src/qt/locale/bitcoin_ar.ts src/qt/locale/bitcoin_ca-AD.ts src/qt/locale/bitcoin_ca_ES.ts src/qt/locale/bitcoin_cs-CZ.ts src/qt/locale/bitcoin_cs.ts src/qt/locale/bitcoin_da.ts src/qt/locale/bitcoin_de.ts src/qt/locale/bitcoin_el-GR.ts src/qt/locale/bitcoin_el_GR.ts src/qt/locale/bitcoin_en.ts src/qt/locale/bitcoin_es-CL.ts src/qt/locale/bitcoin_es.ts src/qt/locale/bitcoin_es_CL.ts src/qt/locale/bitcoin_et-EE.ts src/qt/locale/bitcoin_et.ts src/qt/locale/bitcoin_eu-ES.ts src/qt/locale/bitcoin_eu_ES.ts src/qt/locale/bitcoin_fa-IR.ts src/qt/locale/bitcoin_fa.ts src/qt/locale/bitcoin_fa_IR.ts src/qt/locale/bitcoin_fi.ts src/qt/locale/bitcoin_fr.ts src/qt/locale/bitcoin_fr_CA.ts src/qt/locale/bitcoin_fr_FR.ts src/qt/locale/bitcoin_grk-CY.ts src/qt/locale/bitcoin_grk.ts src/qt/locale/bitcoin_he.ts src/qt/locale/bitcoin_hi.ts src/qt/locale/bitcoin_hr-HR.ts src/qt/locale/bitcoin_hr.ts src/qt/locale/bitcoin_hu.ts src/qt/locale/bitcoin_id.ts src/qt/locale/bitcoin_it.ts src/qt/locale/bitcoin_lt.ts src/qt/locale/bitcoin_nb.ts src/qt/locale/bitcoin_nl.ts src/qt/locale/bitcoin_pl.ts src/qt/locale/bitcoin_pt-BR.ts src/qt/locale/bitcoin_pt_BR.ts src/qt/locale/bitcoin_ro-RO.ts src/qt/locale/bitcoin_ro_RO.ts src/qt/locale/bitcoin_ru.ts src/qt/locale/bitcoin_sk-SK.ts src/qt/locale/bitcoin_sk.ts src/qt/locale/bitcoin_sr.ts src/qt/locale/bitcoin_sv.ts src/qt/locale/bitcoin_tr-TR.ts src/qt/locale/bitcoin_tr.ts src/qt/locale/bitcoin_uk.ts src/qt/locale/bitcoin_zh-CN.ts src/qt/locale/bitcoin_zh-TW.ts src/qt/locale/bitcoin_zh_CN.ts src/qt/locale/bitcoin_zh_TW.ts $(DISTDIR)/
 	$(COPY_FILE) --parents src/qt/bitcoin.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents src/qt/bitcoingui.h src/qt/transactiontablemodel.h src/qt/addresstablemodel.h src/qt/optionsdialog.h src/qt/sendcoinsdialog.h src/qt/coincontroldialog.h src/qt/coincontroltreewidget.h src/qt/addressbookpage.h src/qt/signverifymessagedialog.h src/qt/aboutdialog.h src/qt/editaddressdialog.h src/qt/bitcoinaddressvalidator.h src/addrman.h src/base58.h src/bignum.h src/checkpoints.h src/coincontrol.h src/compat.h src/util.h src/uint256.h src/serialize.h src/strlcpy.h src/main.h src/net.h src/key.h src/db.h src/walletdb.h src/script.h src/init.h src/irc.h src/mruset.h src/json/json_spirit_writer_template.h src/json/json_spirit_writer.h src/json/json_spirit_value.h src/json/json_spirit_utils.h src/json/json_spirit_stream_reader.h src/json/json_spirit_reader_template.h src/json/json_spirit_reader.h src/json/json_spirit_error_position.h src/json/json_spirit.h src/qt/clientmodel.h src/qt/guiutil.h src/qt/transactionrecord.h src/qt/guiconstants.h src/qt/optionsmodel.h src/qt/monitoreddatamapper.h src/qt/transactiondesc.h src/qt/transactiondescdialog.h src/qt/bitcoinamountfield.h src/wallet.h src/keystore.h src/qt/transactionfilterproxy.h src/qt/transactionview.h src/qt/walletmodel.h src/bitcoinrpc.h src/qt/overviewpage.h src/qt/csvmodelwriter.h src/crypter.h src/qt/sendcoinsentry.h src/qt/qvalidatedlineedit.h src/qt/bitcoinunits.h src/qt/qvaluecombobox.h src/qt/askpassphrasedialog.h src/protocol.h src/qt/notificator.h src/qt/qtipcserver.h src/allocators.h src/ui_interface.h src/qt/rpcconsole.h src/kernel.h src/qt/blockbrowser.h src/qt/mintingview.h src/qt/mintingtablemodel.h src/qt/mintingfilterproxy.h src/kernelrecord.h src/qt/virtualkeyboard.h src/qt/multisigaddressentry.h src/qt/multisiginputentry.h src/qt/multisigdialog.h $(DISTDIR)/
-	$(COPY_FILE) --parents src/qt/bitcoin.cpp src/qt/bitcoingui.cpp src/qt/transactiontablemodel.cpp src/qt/addresstablemodel.cpp src/qt/optionsdialog.cpp src/qt/sendcoinsdialog.cpp src/qt/coincontroldialog.cpp src/qt/coincontroltreewidget.cpp src/qt/addressbookpage.cpp src/qt/signverifymessagedialog.cpp src/qt/aboutdialog.cpp src/qt/editaddressdialog.cpp src/qt/bitcoinaddressvalidator.cpp src/version.cpp src/util.cpp src/netbase.cpp src/key.cpp src/script.cpp src/main.cpp src/init.cpp src/net.cpp src/irc.cpp src/checkpoints.cpp src/addrman.cpp src/db.cpp src/walletdb.cpp src/json/json_spirit_writer.cpp src/json/json_spirit_value.cpp src/json/json_spirit_reader.cpp src/qt/clientmodel.cpp src/qt/guiutil.cpp src/qt/transactionrecord.cpp src/qt/optionsmodel.cpp src/qt/monitoreddatamapper.cpp src/qt/transactiondesc.cpp src/qt/transactiondescdialog.cpp src/qt/bitcoinstrings.cpp src/qt/bitcoinamountfield.cpp src/wallet.cpp src/keystore.cpp src/qt/transactionfilterproxy.cpp src/qt/transactionview.cpp src/qt/walletmodel.cpp src/bitcoinrpc.cpp src/rpcdump.cpp src/qt/overviewpage.cpp src/qt/csvmodelwriter.cpp src/crypter.cpp src/qt/sendcoinsentry.cpp src/qt/qvalidatedlineedit.cpp src/qt/bitcoinunits.cpp src/qt/blockbrowser.cpp src/qt/qvaluecombobox.cpp src/qt/askpassphrasedialog.cpp src/protocol.cpp src/qt/notificator.cpp src/qt/qtipcserver.cpp src/qt/rpcconsole.cpp src/kernel.cpp src/qt/mintingview.cpp src/qt/mintingtablemodel.cpp src/qt/mintingfilterproxy.cpp src/kernelrecord.cpp src/qt/virtualkeyboard.cpp src/qt/multisigaddressentry.cpp src/qt/multisiginputentry.cpp src/qt/multisigdialog.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents src/qt/bitcoingui.h src/qt/transactiontablemodel.h src/qt/addresstablemodel.h src/qt/optionsdialog.h src/qt/sendcoinsdialog.h src/qt/coincontroldialog.h src/qt/coincontroltreewidget.h src/qt/addressbookpage.h src/qt/signverifymessagedialog.h src/qt/aboutdialog.h src/qt/editaddressdialog.h src/qt/bitcoinaddressvalidator.h src/addrman.h src/base58.h src/bignum.h src/checkpoints.h src/coincontrol.h src/compat.h src/util.h src/uint256.h src/serialize.h src/strlcpy.h src/main.h src/net.h src/key.h src/db.h src/walletdb.h src/script.h src/init.h src/irc.h src/mruset.h src/json/json_spirit_writer_template.h src/json/json_spirit_writer.h src/json/json_spirit_value.h src/json/json_spirit_utils.h src/json/json_spirit_stream_reader.h src/json/json_spirit_reader_template.h src/json/json_spirit_reader.h src/json/json_spirit_error_position.h src/json/json_spirit.h src/qt/clientmodel.h src/qt/guiutil.h src/qt/transactionrecord.h src/qt/guiconstants.h src/qt/optionsmodel.h src/qt/monitoreddatamapper.h src/qt/transactiondesc.h src/qt/transactiondescdialog.h src/qt/bitcoinamountfield.h src/wallet.h src/keystore.h src/qt/transactionfilterproxy.h src/qt/transactionview.h src/qt/walletmodel.h src/bitcoinrpc.h src/qt/overviewpage.h src/qt/csvmodelwriter.h src/crypter.h src/qt/sendcoinsentry.h src/qt/qvalidatedlineedit.h src/qt/bitcoinunits.h src/qt/qvaluecombobox.h src/qt/askpassphrasedialog.h src/protocol.h src/qt/notificator.h src/qt/qtipcserver.h src/allocators.h src/ui_interface.h src/qt/rpcconsole.h src/kernel.h src/qt/blockbrowser.h src/kernelrecord.h src/qt/virtualkeyboard.h src/qt/multisigaddressentry.h src/qt/multisiginputentry.h src/qt/multisigdialog.h $(DISTDIR)/
+	$(COPY_FILE) --parents src/qt/bitcoin.cpp src/qt/bitcoingui.cpp src/qt/transactiontablemodel.cpp src/qt/addresstablemodel.cpp src/qt/optionsdialog.cpp src/qt/sendcoinsdialog.cpp src/qt/coincontroldialog.cpp src/qt/coincontroltreewidget.cpp src/qt/addressbookpage.cpp src/qt/signverifymessagedialog.cpp src/qt/aboutdialog.cpp src/qt/editaddressdialog.cpp src/qt/bitcoinaddressvalidator.cpp src/version.cpp src/util.cpp src/netbase.cpp src/key.cpp src/script.cpp src/main.cpp src/init.cpp src/net.cpp src/irc.cpp src/checkpoints.cpp src/addrman.cpp src/db.cpp src/walletdb.cpp src/json/json_spirit_writer.cpp src/json/json_spirit_value.cpp src/json/json_spirit_reader.cpp src/qt/clientmodel.cpp src/qt/guiutil.cpp src/qt/transactionrecord.cpp src/qt/optionsmodel.cpp src/qt/monitoreddatamapper.cpp src/qt/transactiondesc.cpp src/qt/transactiondescdialog.cpp src/qt/bitcoinstrings.cpp src/qt/bitcoinamountfield.cpp src/wallet.cpp src/keystore.cpp src/qt/transactionfilterproxy.cpp src/qt/transactionview.cpp src/qt/walletmodel.cpp src/bitcoinrpc.cpp src/rpcdump.cpp src/qt/overviewpage.cpp src/qt/csvmodelwriter.cpp src/crypter.cpp src/qt/sendcoinsentry.cpp src/qt/qvalidatedlineedit.cpp src/qt/bitcoinunits.cpp src/qt/blockbrowser.cpp src/qt/qvaluecombobox.cpp src/qt/askpassphrasedialog.cpp src/protocol.cpp src/qt/notificator.cpp src/qt/qtipcserver.cpp src/qt/rpcconsole.cpp src/kernel.cpp src/kernelrecord.cpp src/qt/virtualkeyboard.cpp src/qt/multisigaddressentry.cpp src/qt/multisiginputentry.cpp src/qt/multisigdialog.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents src/qt/forms/sendcoinsdialog.ui src/qt/forms/coincontroldialog.ui src/qt/forms/addressbookpage.ui src/qt/forms/signverifymessagedialog.ui src/qt/forms/aboutdialog.ui src/qt/forms/editaddressdialog.ui src/qt/forms/transactiondescdialog.ui src/qt/forms/overviewpage.ui src/qt/forms/sendcoinsentry.ui src/qt/forms/askpassphrasedialog.ui src/qt/forms/rpcconsole.ui src/qt/forms/blockbrowser.ui src/qt/forms/multisigaddressentry.ui src/qt/forms/multisiginputentry.ui src/qt/forms/multisigdialog.ui $(DISTDIR)/
 	$(COPY_FILE) --parents src/qt/locale/bitcoin_ar.ts src/qt/locale/bitcoin_ca-AD.ts src/qt/locale/bitcoin_ca_ES.ts src/qt/locale/bitcoin_cs-CZ.ts src/qt/locale/bitcoin_cs.ts src/qt/locale/bitcoin_da.ts src/qt/locale/bitcoin_de.ts src/qt/locale/bitcoin_el-GR.ts src/qt/locale/bitcoin_el_GR.ts src/qt/locale/bitcoin_en.ts src/qt/locale/bitcoin_es-CL.ts src/qt/locale/bitcoin_es.ts src/qt/locale/bitcoin_es_CL.ts src/qt/locale/bitcoin_et-EE.ts src/qt/locale/bitcoin_et.ts src/qt/locale/bitcoin_eu-ES.ts src/qt/locale/bitcoin_eu_ES.ts src/qt/locale/bitcoin_fa-IR.ts src/qt/locale/bitcoin_fa.ts src/qt/locale/bitcoin_fa_IR.ts src/qt/locale/bitcoin_fi.ts src/qt/locale/bitcoin_fr.ts src/qt/locale/bitcoin_fr_CA.ts src/qt/locale/bitcoin_fr_FR.ts src/qt/locale/bitcoin_grk-CY.ts src/qt/locale/bitcoin_grk.ts src/qt/locale/bitcoin_he.ts src/qt/locale/bitcoin_hi.ts src/qt/locale/bitcoin_hr-HR.ts src/qt/locale/bitcoin_hr.ts src/qt/locale/bitcoin_hu.ts src/qt/locale/bitcoin_id.ts src/qt/locale/bitcoin_it.ts src/qt/locale/bitcoin_lt.ts src/qt/locale/bitcoin_nb.ts src/qt/locale/bitcoin_nl.ts src/qt/locale/bitcoin_pl.ts src/qt/locale/bitcoin_pt-BR.ts src/qt/locale/bitcoin_pt_BR.ts src/qt/locale/bitcoin_ro-RO.ts src/qt/locale/bitcoin_ro_RO.ts src/qt/locale/bitcoin_ru.ts src/qt/locale/bitcoin_sk-SK.ts src/qt/locale/bitcoin_sk.ts src/qt/locale/bitcoin_sr.ts src/qt/locale/bitcoin_sv.ts src/qt/locale/bitcoin_tr-TR.ts src/qt/locale/bitcoin_tr.ts src/qt/locale/bitcoin_uk.ts src/qt/locale/bitcoin_zh-CN.ts src/qt/locale/bitcoin_zh-TW.ts src/qt/locale/bitcoin_zh_CN.ts src/qt/locale/bitcoin_zh_TW.ts $(DISTDIR)/
 
@@ -962,9 +944,9 @@ compiler_moc_predefs_clean:
 build/moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -fstack-protector-all -D_FORTIFY_SOURCE=2 -fstack-protector -O2 -D_REENTRANT -Wall -Wextra -Wformat -Wformat-security -Wno-invalid-offsetof -Wno-sign-compare -Wno-unused-parameter -fdiagnostics-show-option -dM -E -o build/moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: build/moc_bitcoingui.cpp build/moc_transactiontablemodel.cpp build/moc_addresstablemodel.cpp build/moc_optionsdialog.cpp build/moc_sendcoinsdialog.cpp build/moc_coincontroldialog.cpp build/moc_coincontroltreewidget.cpp build/moc_addressbookpage.cpp build/moc_signverifymessagedialog.cpp build/moc_aboutdialog.cpp build/moc_editaddressdialog.cpp build/moc_bitcoinaddressvalidator.cpp build/moc_clientmodel.cpp build/moc_optionsmodel.cpp build/moc_monitoreddatamapper.cpp build/moc_transactiondesc.cpp build/moc_transactiondescdialog.cpp build/moc_bitcoinamountfield.cpp build/moc_transactionfilterproxy.cpp build/moc_transactionview.cpp build/moc_walletmodel.cpp build/moc_overviewpage.cpp build/moc_csvmodelwriter.cpp build/moc_sendcoinsentry.cpp build/moc_qvalidatedlineedit.cpp build/moc_qvaluecombobox.cpp build/moc_askpassphrasedialog.cpp build/moc_notificator.cpp build/moc_rpcconsole.cpp build/moc_blockbrowser.cpp build/moc_mintingview.cpp build/moc_mintingtablemodel.cpp build/moc_mintingfilterproxy.cpp build/moc_virtualkeyboard.cpp build/moc_multisigaddressentry.cpp build/moc_multisiginputentry.cpp build/moc_multisigdialog.cpp
+compiler_moc_header_make_all: build/moc_bitcoingui.cpp build/moc_transactiontablemodel.cpp build/moc_addresstablemodel.cpp build/moc_optionsdialog.cpp build/moc_sendcoinsdialog.cpp build/moc_coincontroldialog.cpp build/moc_coincontroltreewidget.cpp build/moc_addressbookpage.cpp build/moc_signverifymessagedialog.cpp build/moc_aboutdialog.cpp build/moc_editaddressdialog.cpp build/moc_bitcoinaddressvalidator.cpp build/moc_clientmodel.cpp build/moc_optionsmodel.cpp build/moc_monitoreddatamapper.cpp build/moc_transactiondesc.cpp build/moc_transactiondescdialog.cpp build/moc_bitcoinamountfield.cpp build/moc_transactionfilterproxy.cpp build/moc_transactionview.cpp build/moc_walletmodel.cpp build/moc_overviewpage.cpp build/moc_csvmodelwriter.cpp build/moc_sendcoinsentry.cpp build/moc_qvalidatedlineedit.cpp build/moc_qvaluecombobox.cpp build/moc_askpassphrasedialog.cpp build/moc_notificator.cpp build/moc_rpcconsole.cpp build/moc_blockbrowser.cpp build/moc_virtualkeyboard.cpp build/moc_multisigaddressentry.cpp build/moc_multisiginputentry.cpp build/moc_multisigdialog.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) build/moc_bitcoingui.cpp build/moc_transactiontablemodel.cpp build/moc_addresstablemodel.cpp build/moc_optionsdialog.cpp build/moc_sendcoinsdialog.cpp build/moc_coincontroldialog.cpp build/moc_coincontroltreewidget.cpp build/moc_addressbookpage.cpp build/moc_signverifymessagedialog.cpp build/moc_aboutdialog.cpp build/moc_editaddressdialog.cpp build/moc_bitcoinaddressvalidator.cpp build/moc_clientmodel.cpp build/moc_optionsmodel.cpp build/moc_monitoreddatamapper.cpp build/moc_transactiondesc.cpp build/moc_transactiondescdialog.cpp build/moc_bitcoinamountfield.cpp build/moc_transactionfilterproxy.cpp build/moc_transactionview.cpp build/moc_walletmodel.cpp build/moc_overviewpage.cpp build/moc_csvmodelwriter.cpp build/moc_sendcoinsentry.cpp build/moc_qvalidatedlineedit.cpp build/moc_qvaluecombobox.cpp build/moc_askpassphrasedialog.cpp build/moc_notificator.cpp build/moc_rpcconsole.cpp build/moc_blockbrowser.cpp build/moc_mintingview.cpp build/moc_mintingtablemodel.cpp build/moc_mintingfilterproxy.cpp build/moc_virtualkeyboard.cpp build/moc_multisigaddressentry.cpp build/moc_multisiginputentry.cpp build/moc_multisigdialog.cpp
+	-$(DEL_FILE) build/moc_bitcoingui.cpp build/moc_transactiontablemodel.cpp build/moc_addresstablemodel.cpp build/moc_optionsdialog.cpp build/moc_sendcoinsdialog.cpp build/moc_coincontroldialog.cpp build/moc_coincontroltreewidget.cpp build/moc_addressbookpage.cpp build/moc_signverifymessagedialog.cpp build/moc_aboutdialog.cpp build/moc_editaddressdialog.cpp build/moc_bitcoinaddressvalidator.cpp build/moc_clientmodel.cpp build/moc_optionsmodel.cpp build/moc_monitoreddatamapper.cpp build/moc_transactiondesc.cpp build/moc_transactiondescdialog.cpp build/moc_bitcoinamountfield.cpp build/moc_transactionfilterproxy.cpp build/moc_transactionview.cpp build/moc_walletmodel.cpp build/moc_overviewpage.cpp build/moc_csvmodelwriter.cpp build/moc_sendcoinsentry.cpp build/moc_qvalidatedlineedit.cpp build/moc_qvaluecombobox.cpp build/moc_askpassphrasedialog.cpp build/moc_notificator.cpp build/moc_rpcconsole.cpp build/moc_blockbrowser.cpp build/moc_virtualkeyboard.cpp build/moc_multisigaddressentry.cpp build/moc_multisiginputentry.cpp build/moc_multisigdialog.cpp
 build/moc_bitcoingui.cpp: src/qt/bitcoingui.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -1138,22 +1120,6 @@ build/moc_blockbrowser.cpp: src/qt/clientmodel.h \
 		build/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/nlab/lab/421 -I/home/nlab/lab/421/src -I/home/nlab/lab/421/src/json -I/home/nlab/lab/421/src/qt -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/qt/blockbrowser.h -o build/moc_blockbrowser.cpp
-
-build/moc_mintingview.cpp: src/qt/mintingfilterproxy.h \
-		src/qt/mintingview.h \
-		build/moc_predefs.h \
-		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/nlab/lab/421 -I/home/nlab/lab/421/src -I/home/nlab/lab/421/src/json -I/home/nlab/lab/421/src/qt -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/qt/mintingview.h -o build/moc_mintingview.cpp
-
-build/moc_mintingtablemodel.cpp: src/qt/mintingtablemodel.h \
-		build/moc_predefs.h \
-		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/nlab/lab/421 -I/home/nlab/lab/421/src -I/home/nlab/lab/421/src/json -I/home/nlab/lab/421/src/qt -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/qt/mintingtablemodel.h -o build/moc_mintingtablemodel.cpp
-
-build/moc_mintingfilterproxy.cpp: src/qt/mintingfilterproxy.h \
-		build/moc_predefs.h \
-		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include build/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/nlab/lab/421 -I/home/nlab/lab/421/src -I/home/nlab/lab/421/src/json -I/home/nlab/lab/421/src/qt -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/qt/mintingfilterproxy.h -o build/moc_mintingfilterproxy.cpp
 
 build/moc_virtualkeyboard.cpp: src/qt/virtualkeyboard.h \
 		build/moc_predefs.h \
@@ -1357,8 +1323,6 @@ build/bitcoingui.o: src/qt/bitcoingui.cpp src/qt/bitcoingui.h \
 		src/qt/transactiondescdialog.h \
 		src/qt/addresstablemodel.h \
 		src/qt/transactionview.h \
-		src/qt/mintingview.h \
-		src/qt/mintingfilterproxy.h \
 		src/qt/blockbrowser.h \
 		src/main.h \
 		src/bignum.h \
@@ -1497,7 +1461,6 @@ build/sendcoinsdialog.o: src/qt/sendcoinsdialog.cpp src/qt/sendcoinsdialog.h \
 
 build/coincontroldialog.o: src/qt/coincontroldialog.cpp src/qt/coincontroldialog.h \
 		build/ui_coincontroldialog.h \
-		src/qt/coincontroltreewidget.h \
 		src/init.h \
 		src/wallet.h \
 		src/main.h \
@@ -1543,7 +1506,6 @@ build/addressbookpage.o: src/qt/addressbookpage.cpp src/qt/addressbookpage.h \
 
 build/signverifymessagedialog.o: src/qt/signverifymessagedialog.cpp src/qt/signverifymessagedialog.h \
 		build/ui_signverifymessagedialog.h \
-		src/qt/qvalidatedlineedit.h \
 		src/qt/addressbookpage.h \
 		src/qt/guiutil.h \
 		src/qt/walletmodel.h \
@@ -2068,7 +2030,6 @@ build/walletmodel.o: src/qt/walletmodel.cpp src/qt/walletmodel.h \
 		src/qt/guiconstants.h \
 		src/qt/optionsmodel.h \
 		src/qt/addresstablemodel.h \
-		src/qt/mintingtablemodel.h \
 		src/qt/transactiontablemodel.h \
 		src/ui_interface.h \
 		src/util.h \
@@ -2186,8 +2147,6 @@ build/crypter.o: src/crypter.cpp src/crypter.h \
 
 build/sendcoinsentry.o: src/qt/sendcoinsentry.cpp src/qt/sendcoinsentry.h \
 		build/ui_sendcoinsentry.h \
-		src/qt/bitcoinamountfield.h \
-		src/qt/qvalidatedlineedit.h \
 		src/qt/guiutil.h \
 		src/qt/bitcoinunits.h \
 		src/qt/addressbookpage.h \
@@ -2306,56 +2265,6 @@ build/kernel.o: src/kernel.cpp src/kernel.h \
 		src/db.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/kernel.o src/kernel.cpp
 
-build/mintingview.o: src/qt/mintingview.cpp src/qt/mintingview.h \
-		src/qt/mintingfilterproxy.h \
-		src/qt/transactionrecord.h \
-		src/uint256.h \
-		src/qt/mintingtablemodel.h \
-		src/qt/walletmodel.h \
-		src/allocators.h \
-		src/qt/guiconstants.h \
-		src/qt/guiutil.h \
-		src/qt/csvmodelwriter.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/mintingview.o src/qt/mintingview.cpp
-
-build/mintingtablemodel.o: src/qt/mintingtablemodel.cpp src/qt/mintingtablemodel.h \
-		src/qt/mintingfilterproxy.h \
-		src/qt/transactiontablemodel.h \
-		src/qt/guiutil.h \
-		src/kernelrecord.h \
-		src/uint256.h \
-		src/qt/guiconstants.h \
-		src/qt/transactiondesc.h \
-		src/qt/walletmodel.h \
-		src/allocators.h \
-		src/qt/optionsmodel.h \
-		src/qt/addresstablemodel.h \
-		src/qt/bitcoinunits.h \
-		src/util.h \
-		src/netbase.h \
-		src/serialize.h \
-		src/version.h \
-		src/compat.h \
-		src/kernel.h \
-		src/main.h \
-		src/bignum.h \
-		src/net.h \
-		src/mruset.h \
-		src/protocol.h \
-		src/addrman.h \
-		src/script.h \
-		src/keystore.h \
-		src/crypter.h \
-		src/key.h \
-		src/wallet.h \
-		src/walletdb.h \
-		src/db.h \
-		src/base58.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/mintingtablemodel.o src/qt/mintingtablemodel.cpp
-
-build/mintingfilterproxy.o: src/qt/mintingfilterproxy.cpp src/qt/mintingfilterproxy.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/mintingfilterproxy.o src/qt/mintingfilterproxy.cpp
-
 build/kernelrecord.o: src/kernelrecord.cpp src/kernelrecord.h \
 		src/uint256.h \
 		src/wallet.h \
@@ -2401,7 +2310,6 @@ build/multisigaddressentry.o: src/qt/multisigaddressentry.cpp src/qt/addressbook
 		src/qt/guiutil.h \
 		src/qt/multisigaddressentry.h \
 		build/ui_multisigaddressentry.h \
-		src/qt/qvalidatedlineedit.h \
 		src/qt/walletmodel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/multisigaddressentry.o src/qt/multisigaddressentry.cpp
 
@@ -2420,7 +2328,6 @@ build/multisiginputentry.o: src/qt/multisiginputentry.cpp src/base58.h \
 		src/crypter.h \
 		src/qt/multisiginputentry.h \
 		build/ui_multisiginputentry.h \
-		src/qt/qvalidatedlineedit.h \
 		src/main.h \
 		src/net.h \
 		src/mruset.h \
@@ -2554,15 +2461,6 @@ build/moc_rpcconsole.o: build/moc_rpcconsole.cpp
 
 build/moc_blockbrowser.o: build/moc_blockbrowser.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/moc_blockbrowser.o build/moc_blockbrowser.cpp
-
-build/moc_mintingview.o: build/moc_mintingview.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/moc_mintingview.o build/moc_mintingview.cpp
-
-build/moc_mintingtablemodel.o: build/moc_mintingtablemodel.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/moc_mintingtablemodel.o build/moc_mintingtablemodel.cpp
-
-build/moc_mintingfilterproxy.o: build/moc_mintingfilterproxy.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/moc_mintingfilterproxy.o build/moc_mintingfilterproxy.cpp
 
 build/moc_virtualkeyboard.o: build/moc_virtualkeyboard.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/moc_virtualkeyboard.o build/moc_virtualkeyboard.cpp

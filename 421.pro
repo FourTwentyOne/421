@@ -260,9 +260,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/kernel.h \
     src/qt/blockbrowser.h \
-    src/qt/mintingview.h \
-    src/qt/mintingtablemodel.h \
-    src/qt/mintingfilterproxy.h \
     src/kernelrecord.h \
     src/qt/virtualkeyboard.h \
     src/qt/multisigaddressentry.h \
@@ -327,9 +324,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/qtipcserver.cpp \
     src/qt/rpcconsole.cpp \
     src/kernel.cpp \
-    src/qt/mintingview.cpp \
-    src/qt/mintingtablemodel.cpp \
-    src/qt/mintingfilterproxy.cpp \
     src/kernelrecord.cpp \
     src/qt/virtualkeyboard.cpp \
     src/qt/multisigaddressentry.cpp \
