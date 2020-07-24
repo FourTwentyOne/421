@@ -1,4 +1,6 @@
-# 421 Official Development Repository
+# 421 Official Repository
+
+Explorer -> http://421blocks.nerdlabs001.com
 
 sha256 pos/pow hybrid
 sourced from Peercoin
