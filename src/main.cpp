@@ -971,22 +971,8 @@ int64 GetProofOfStakeReward(int64 nCoinAge)
 {
     static int64 nRewardCoinYear = 421 * CENT;  // creation amount per coin-year
     int64 nSubsidy = nCoinAge * 33 / (365 * 33 + 8) * nRewardCoinYear;
-    strMotivational = "421";
 
-    
-    if(pindexBest->nHeight < 2000)
-    {
-        nSubsidy = 10 * COIN;                    // 10 Coins  on blocks 1-2000
-		return nSubsidy; 
-    }
-	
-    else if(pindexBest->nHeight < 4000)
-    {
-        nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 1 ;     //  on blocks from 2001 to 4000   1% PoS 
-		return nSubsidy; 
-    }
-	
-	
+    strMotivational = "421";
     if (fDebug && GetBoolArg("-printcreation"))
        printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d "\n", FormatMoney(nSubsidy).c_str(), nCoinAge); 
     return nSubsidy;
