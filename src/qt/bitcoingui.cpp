@@ -80,7 +80,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
     resize(850, 550);
     setWindowTitle(tr("421 Classic"));
-    //qApp->setStyleSheet("QMainWindow { background-color: #95c787 }");
+    qApp->setStyleSheet("QMainWindow { background-color: #FFFFFF }");
 #ifndef Q_WS_MAC
     setWindowIcon(QIcon(":icons/421_icon"));
 #else
