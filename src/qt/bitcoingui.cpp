@@ -79,8 +79,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     resize(850, 550);
-    setWindowTitle(tr("The Nug Jar"));
-    qApp->setStyleSheet("QMainWindow { background-color: #95c787 }");
+    setWindowTitle(tr("421 Classic"));
+    //qApp->setStyleSheet("QMainWindow { background-color: #95c787 }");
 #ifndef Q_WS_MAC
     setWindowIcon(QIcon(":icons/421_icon"));
 #else
