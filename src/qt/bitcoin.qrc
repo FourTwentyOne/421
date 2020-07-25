@@ -53,6 +53,12 @@
         <file alias="splash">res/images/421_splash.png</file>
         <file alias="qrcode">res/images/qrcode.png</file>
         <file>res/images/logo.png</file>
+        <file>res/images/discord.png</file>
+        <file>res/images/exchange.png</file>
+        <file>res/images/explorer.png</file>
+        <file>res/images/github.png</file>
+        <file>res/images/ppcoin_splash.png</file>
+        <file>res/images/splash2.jpg</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
