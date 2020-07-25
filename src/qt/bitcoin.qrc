@@ -43,11 +43,16 @@
         <file alias="bex">res/icons/bex.png</file>
         <file alias="qt">res/icons/qt.png</file>
         <file alias="debugwindow">res/icons/debugwindow.png</file>
+        <file alias="connect_5">res/icons/connect5_16.png</file>
+        <file alias="connect_6">res/icons/connect6_16.png</file>
+        <file alias="connect_7">res/icons/connect7_16.png</file>
+        <file alias="connect_8">res/icons/connect8_16.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/421_splash.png</file>
         <file alias="qrcode">res/images/qrcode.png</file>
+        <file>res/images/logo.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
