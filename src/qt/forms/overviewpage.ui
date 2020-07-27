@@ -17,10 +17,13 @@
    <item row="0" column="0" rowspan="2" colspan="2">
     <widget class="QFrame" name="frame_3">
      <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
       <item row="2" column="0" colspan="2">
@@ -38,10 +41,13 @@
          </size>
         </property>
         <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
+         <enum>QFrame::NoFrame</enum>
         </property>
         <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
         </property>
         <layout class="QGridLayout" name="gridLayout">
          <item row="0" column="5">
@@ -228,16 +234,19 @@
          <item>
           <widget class="QFrame" name="frame_6">
            <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
+            <enum>QFrame::NoFrame</enum>
            </property>
            <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
            </property>
            <layout class="QGridLayout" name="gridLayout_6">
             <item row="0" column="1">
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>&lt;body&gt;&lt;b&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Recent Transactions&lt;b/&gt;&lt;/p&gt;&lt;/body&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Recent Transactions&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -407,10 +416,13 @@
       <item row="0" column="0" rowspan="2">
        <widget class="QFrame" name="frame_7">
         <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
+         <enum>QFrame::NoFrame</enum>
         </property>
         <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
          <item row="1" column="0">
@@ -425,24 +437,10 @@
             <number>-1</number>
            </property>
            <layout class="QGridLayout" name="gridLayout_4">
-            <item row="0" column="1">
-             <widget class="QLabel" name="label_5">
-              <property name="font">
-               <font>
-                <pointsize>11</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Nug Count&lt;/p&gt;&lt;/body&gt;</string>
-              </property>
-             </widget>
-            </item>
             <item row="1" column="1">
              <widget class="QLabel" name="label">
               <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Balance&gt;&lt;/p&gt;&lt;/body&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Balance:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -456,7 +454,7 @@
             <item row="2" column="1">
              <widget class="QLabel" name="label_6">
               <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Stake&gt;&lt;/p&gt;&lt;/body&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Stake:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -470,7 +468,7 @@
             <item row="3" column="1">
              <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Unconfirmed&gt;&lt;/p&gt;&lt;/body&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Unconfirmed:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -494,20 +492,6 @@
               </property>
              </spacer>
             </item>
-            <item row="4" column="1">
-             <widget class="QLabel" name="label_2">
-              <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;# of Transactions&gt;&lt;/p&gt;&lt;/body&gt;</string>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="2">
-             <widget class="QLabel" name="labelNumTransactions">
-              <property name="text">
-               <string>&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 &lt;/p&gt;&lt;/body&gt;</string>
-              </property>
-             </widget>
-            </item>
             <item row="1" column="3">
              <spacer name="horizontalSpacer_10">
               <property name="orientation">
@@ -520,6 +504,34 @@
                </size>
               </property>
              </spacer>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLabel" name="labelNumTransactions">
+              <property name="text">
+               <string>&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 &lt;/p&gt;&lt;/body&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;# of Transactions&gt;&lt;/p&gt;&lt;/body&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&lt;body&gt;&lt;p style=&quot;color:#000000&quot;;&gt;Nug Count&lt;/p&gt;&lt;/body&gt;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>

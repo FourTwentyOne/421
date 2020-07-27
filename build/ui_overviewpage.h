@@ -51,7 +51,6 @@ public:
     QGridLayout *gridLayout_2;
     QFrame *frame;
     QGridLayout *gridLayout_4;
-    QLabel *label_5;
     QLabel *label;
     QLabel *labelBalance;
     QLabel *label_6;
@@ -59,9 +58,10 @@ public:
     QLabel *label_3;
     QLabel *labelUnconfirmed;
     QSpacerItem *horizontalSpacer_9;
-    QLabel *label_2;
-    QLabel *labelNumTransactions;
     QSpacerItem *horizontalSpacer_10;
+    QLabel *labelNumTransactions;
+    QLabel *label_2;
+    QLabel *label_5;
     QFrame *frame_5;
     QGridLayout *gridLayout_5;
     QLabel *label_7;
@@ -77,16 +77,18 @@ public:
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
         frame_3 = new QFrame(OverviewPage);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
-        frame_3->setFrameShape(QFrame::StyledPanel);
-        frame_3->setFrameShadow(QFrame::Raised);
+        frame_3->setFrameShape(QFrame::NoFrame);
+        frame_3->setFrameShadow(QFrame::Plain);
+        frame_3->setLineWidth(0);
         gridLayout_3 = new QGridLayout(frame_3);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         frame_4 = new QFrame(frame_3);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
         frame_4->setMinimumSize(QSize(0, 100));
         frame_4->setMaximumSize(QSize(16777215, 100));
-        frame_4->setFrameShape(QFrame::StyledPanel);
-        frame_4->setFrameShadow(QFrame::Raised);
+        frame_4->setFrameShape(QFrame::NoFrame);
+        frame_4->setFrameShadow(QFrame::Plain);
+        frame_4->setLineWidth(0);
         gridLayout = new QGridLayout(frame_4);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label10_15 = new QLabel(frame_4);
@@ -155,8 +157,9 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         frame_6 = new QFrame(frame_2);
         frame_6->setObjectName(QString::fromUtf8("frame_6"));
-        frame_6->setFrameShape(QFrame::StyledPanel);
-        frame_6->setFrameShadow(QFrame::Raised);
+        frame_6->setFrameShape(QFrame::NoFrame);
+        frame_6->setFrameShadow(QFrame::Plain);
+        frame_6->setLineWidth(0);
         gridLayout_6 = new QGridLayout(frame_6);
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         label_4 = new QLabel(frame_6);
@@ -206,8 +209,9 @@ public:
 
         frame_7 = new QFrame(frame_3);
         frame_7->setObjectName(QString::fromUtf8("frame_7"));
-        frame_7->setFrameShape(QFrame::StyledPanel);
-        frame_7->setFrameShadow(QFrame::Raised);
+        frame_7->setFrameShape(QFrame::NoFrame);
+        frame_7->setFrameShadow(QFrame::Plain);
+        frame_7->setLineWidth(0);
         gridLayout_2 = new QGridLayout(frame_7);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         frame = new QFrame(frame_7);
@@ -217,16 +221,6 @@ public:
         frame->setLineWidth(-1);
         gridLayout_4 = new QGridLayout(frame);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        label_5 = new QLabel(frame);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        QFont font;
-        font.setPointSize(11);
-        font.setBold(true);
-        font.setWeight(75);
-        label_5->setFont(font);
-
-        gridLayout_4->addWidget(label_5, 0, 1, 1, 1);
-
         label = new QLabel(frame);
         label->setObjectName(QString::fromUtf8("label"));
 
@@ -264,19 +258,29 @@ public:
 
         gridLayout_4->addItem(horizontalSpacer_9, 0, 0, 1, 1);
 
-        label_2 = new QLabel(frame);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        horizontalSpacer_10 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_4->addWidget(label_2, 4, 1, 1, 1);
+        gridLayout_4->addItem(horizontalSpacer_10, 1, 3, 1, 1);
 
         labelNumTransactions = new QLabel(frame);
         labelNumTransactions->setObjectName(QString::fromUtf8("labelNumTransactions"));
 
         gridLayout_4->addWidget(labelNumTransactions, 4, 2, 1, 1);
 
-        horizontalSpacer_10 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
 
-        gridLayout_4->addItem(horizontalSpacer_10, 1, 3, 1, 1);
+        gridLayout_4->addWidget(label_2, 4, 1, 1, 1);
+
+        label_5 = new QLabel(frame);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        QFont font;
+        font.setPointSize(11);
+        font.setBold(true);
+        font.setWeight(75);
+        label_5->setFont(font);
+
+        gridLayout_4->addWidget(label_5, 0, 1, 1, 1);
 
 
         gridLayout_2->addWidget(frame, 1, 0, 1, 1);
@@ -326,13 +330,13 @@ public:
         label10_15->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><a href=\"https://www.unnamed.exchange/CoinInfo?id=421\"><img src=\":/images/res/images/exchange.png\"/></a></p></body></html>", 0, QApplication::UnicodeUTF8));
         label10_13->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><a href=\"https://discord.gg/f5R29Wr\"><img src=\":/images/res/images/discord.png\"/></a></p></body></html>", 0, QApplication::UnicodeUTF8));
         label10_14->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><a href=\"https://421blocks.nerdlabs001.com\"><img src=\":/images/res/images/explorer.png\"/></a></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("OverviewPage", "<body><b><p style=\"color:#000000\";>Recent Transactions<b/></p></body>", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";>Nug Count</p></body>", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";>Balance></p></body>", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";>Stake></p></body>", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";>Unconfirmed></p></body>", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";># of Transactions></p></body>", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#000000;\">Recent Transactions</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#000000;\">Balance:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#000000;\">Stake:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#000000;\">Unconfirmed:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         labelNumTransactions->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#f8f5f5\";>0 </p></body>", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";># of Transactions></p></body>", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("OverviewPage", "<body><p style=\"color:#000000\";>Nug Count</p></body>", 0, QApplication::UnicodeUTF8));
         label_7->setText(QString());
     } // retranslateUi
 
