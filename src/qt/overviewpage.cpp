@@ -12,7 +12,7 @@
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
-#define DECORATION_SIZE 64
+#define DECORATION_SIZE 50
 #define NUM_ITEMS 5
 
 class TxViewDelegate : public QAbstractItemDelegate
@@ -33,7 +33,7 @@ public:
         QRect mainRect = option.rect;
         QRect decorationRect(mainRect.topLeft(), QSize(DECORATION_SIZE, DECORATION_SIZE));
         int xspace = DECORATION_SIZE + 8;
-        int ypad = 5;
+        int ypad = 6;
         int halfheight = (mainRect.height() - 2*ypad)/2;
         QRect amountRect(mainRect.left() + xspace, mainRect.top()+ypad, mainRect.width() - xspace, halfheight);
         QRect addressRect(mainRect.left() + xspace, mainRect.top()+ypad+halfheight, mainRect.width() - xspace, halfheight);
@@ -45,18 +45,11 @@ public:
         bool confirmed = index.data(TransactionTableModel::ConfirmedRole).toBool();
         QVariant value = index.data(Qt::ForegroundRole);
         QColor foreground = option.palette.color(QPalette::Text);
-        #if QT_VERSION < 0x050000
         if(qVariantCanConvert<QColor>(value))
         {
             foreground = qvariant_cast<QColor>(value);
         }
-        #else
-         if(value.canConvert<QBrush>())
-         {
-             QBrush brush = qvariant_cast<QBrush>(value);
-             foreground = brush.color();
-         }
-         #endif
+
         painter->setPen(foreground);
         painter->drawText(addressRect, Qt::AlignLeft|Qt::AlignVCenter, address);
 
@@ -124,15 +117,12 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->labelNumTransactions->setToolTip(tr("Total number of transactions in wallet"));
 
     // Recent transactions
-    ui->listTransactions->setStyleSheet("QListView { background:transparent }");
     ui->listTransactions->setItemDelegate(txdelegate);
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
-    ui->listTransactions->setSelectionMode(QAbstractItemView::NoSelection);
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
-    ui->listTransactions->setResizeMode(QListView::Adjust);
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
 
-    connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SIGNAL(transactionClicked(QModelIndex)));
+    connect(ui->listTransactions, SIGNAL(clicked(QModelIndex)), this, SLOT(handleTransactionClicked(QModelIndex)));
 }
 
 OverviewPage::~OverviewPage()
