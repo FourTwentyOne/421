@@ -12,7 +12,7 @@
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
-#define DECORATION_SIZE 50
+#define DECORATION_SIZE 85
 #define NUM_ITEMS 5
 
 class TxViewDelegate : public QAbstractItemDelegate
