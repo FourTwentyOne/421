@@ -12,8 +12,8 @@
 #include <QAbstractItemDelegate>
 #include <QPainter>
 
-#define DECORATION_SIZE 64
-#define NUM_ITEMS 1
+#define DECORATION_SIZE 62
+#define NUM_ITEMS 6
 
 class TxViewDelegate : public QAbstractItemDelegate
 {
@@ -145,10 +145,7 @@ unsigned int OverviewPage::numDisplayedTransactions()
 {
     unsigned int numItems;
 
-    numItems = height() / DECORATION_SIZE;
-    if(numItems > NUM_ITEMS)
-        numItems--;
-    else if(numItems < NUM_ITEMS)
+
         numItems = NUM_ITEMS;
 
     return numItems;
