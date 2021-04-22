@@ -384,7 +384,7 @@
                      <item row="1" column="2">
                       <widget class="QLabel" name="labelBalance">
                        <property name="text">
-                        <string notr="true">&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 BTC&lt;/p&gt;&lt;/body&gt;</string>
+                        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;0 BTC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                      </item>
@@ -419,14 +419,14 @@
                      <item row="4" column="2">
                       <widget class="QLabel" name="labelNumTransactions">
                        <property name="text">
-                        <string>&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 &lt;/p&gt;&lt;/body&gt;</string>
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;0 &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                      </item>
                      <item row="2" column="2">
                       <widget class="QLabel" name="labelStake">
                        <property name="text">
-                        <string notr="true">&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 BTC&lt;/p&gt;&lt;/body&gt;</string>
+                        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;0 BTC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                      </item>
@@ -440,7 +440,7 @@
                      <item row="3" column="2">
                       <widget class="QLabel" name="labelUnconfirmed">
                        <property name="text">
-                        <string notr="true">&lt;body&gt;&lt;p style=&quot;color:#f8f5f5&quot;;&gt;0 BTC&lt;/p&gt;&lt;/body&gt;</string>
+                        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;0 BTC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                      </item>
