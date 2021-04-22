@@ -1140,11 +1140,14 @@ void MapPort(bool /* unused fMapPort */)
 // testnet dns seed begins with 't', all else are 421 dns seeds.
 static const char *strDNSSeed[][2] = {
     
-    {"seed", "seed1.fourtwentyone.net"},
-    {"seed2", "seed2.fourtwentyone.net"},
+    {"nlab01", "42100.nerdlabs001.com"},
     {"nlab01", "42101.nerdlabs001.com"},
     {"nlab02", "42102.nerdlabs001.com"},
     {"nlab03", "42103.nerdlabs001.com"},
+    {"nlab03", "42104.nerdlabs001.com"},
+    {"seed", "seed1.fourtwentyone.net"},
+    {"seed2", "seed2.fourtwentyone.net"},
+
 
    };
 
