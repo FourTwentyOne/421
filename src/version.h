@@ -10,14 +10,14 @@
 //
 // client versioning
 //
-
+// I dont know what the hell is going on here
 // These need to be macro's, as version.cpp's voodoo requires it
 
 // 421 version - intended for display purpose only
 #define PEERUNITY_VERSION_MAJOR       5
-#define PEERUNITY_VERSION_MINOR       0
-#define PEERUNITY_VERSION_REVISION    1
-#define PEERUNITY_VERSION_BUILD       0
+#define PEERUNITY_VERSION_MINOR       4
+#define PEERUNITY_VERSION_REVISION    2
+#define PEERUNITY_VERSION_BUILD       1
 
 static const int PEERUNITY_VERSION =
                            1000000 * PEERUNITY_VERSION_MAJOR
@@ -60,7 +60,7 @@ extern const std::string CLIENT_DATE;
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 60004;
+static const int PROTOCOL_VERSION = 60421;
 
 // earlier versions not supported as of Feb 2012, and are disconnected
 // NOTE: as of bitcoin v0.6 message serialization (vSend, vRecv) still

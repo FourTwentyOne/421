@@ -14,7 +14,7 @@
 // the list of ancient coinage, from oldest known to more recent. 
 // You can find ideas for future client names, here: http://en.wikipedia.org/wiki/List_of_historical_currencies
 
-const std::string CLIENT_NAME("Satoshi");
+const std::string CLIENT_NAME("421");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""
