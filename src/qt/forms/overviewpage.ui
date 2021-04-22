@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>924</width>
+    <width>1080</width>
     <height>515</height>
    </rect>
   </property>
@@ -191,7 +191,7 @@
                </size>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.unnamed.exchange/CoinInfo?id=421&quot;&gt;&lt;img src=&quot;:/images/res/images/swap.png&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://sites.google.com/view/nerdlabs001/development/421four20one&quot;&gt;&lt;img src=&quot;:/images/res/images/swap.png&quot;/&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="scaledContents">
                <bool>false</bool>
