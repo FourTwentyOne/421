@@ -1144,7 +1144,9 @@ static const char *strDNSSeed[][2] = {
     {"nlab01", "42101.nerdlabs001.com"},
     {"nlab02", "42102.nerdlabs001.com"},
     {"nlab03", "42103.nerdlabs001.com"},
-    {"nlab03", "42104.nerdlabs001.com"},
+    {"nlab04", "42104.nerdlabs001.com"},
+    {"nlabd1", "42100.nerdlabs.dev"},
+    {"nlabd2", "42101.nerdlabs.dev"},
     {"seed", "seed1.fourtwentyone.net"},
     {"seed2", "seed2.fourtwentyone.net"},
 
